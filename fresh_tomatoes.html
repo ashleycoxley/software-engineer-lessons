@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Fresh Tomatoes!</title>
+    <title>Movies Worth Watching</title>
     <!-- Bootstrap 3 -->
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
@@ -31,6 +31,23 @@
         .movie-tile {
             margin-bottom: 20px;
             padding-top: 20px;
+        }
+        .movie-tile .description-text {
+            visibility: hidden;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            padding: 5px 0;
+            border-radius: 5px;
+            opacity: 0.8;
+ 
+            position:absolute;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+        }
+        .movie-tile:hover .description-text {
+            visibility: visible
         }
         .movie-tile:hover {
             background-color: #EEE;
@@ -103,11 +120,16 @@
     <div class="container">
       
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="5U9KmAlrEXU" data-toggle="modal" data-target="#trailer">
+    <div class="description-text">A man and woman are drawn together, entangled in the life cycle of an 
+	ageless organism. Identity becomes an illusion as they struggle to assemble
+	the loose fragments of wrecked lives.</div>
     <img src="https://upload.wikimedia.org/wikipedia/en/e/ea/Upstream_Color_poster.jpg" width="220" height="342">
     <h2>Upstream Color</h2>
 </div>
 
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="h2tY82z3xXU" data-toggle="modal" data-target="#trailer">
+    <div class="description-text">Jerry Lundegaard's inept crime falls apart due to his and his henchmen's
+	bungling and the persistent police work of the quite pregnant Marge Gunderson.</div>
     <img src="http://vignette3.wikia.nocookie.net/fargo/images/d/d7/Fargo_movieposter.jpg/revision/latest?cb=20140226224031" width="220" height="342">
     <h2>Fargo</h2>
 </div>
