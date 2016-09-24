@@ -24,10 +24,12 @@ def get_tmdb_info(imdb_id):
 
 
 def movie_flow():
+	"""Perform the series of steps that change movie_input_data JSON into a
+	list of media.Movie objects, and pass it to the page generator."""
 	movies = []
 	movie_input_data_file = 'movie_input_data.json'
 	movie_input_data = load_movie_input_data(movie_input_data_file)
-	for movie in movie_input_data['movies']:
+	for movie in movie_input_data['movies']: 
 		movie_response_dict = get_tmdb_info(movie['imdb_id'])
 		title = movie_response_dict.get('title')
 		description = movie_response_dict.get('overview')
