@@ -1,4 +1,3 @@
-
 import os
 import webapp2
 import jinja2
@@ -11,7 +10,6 @@ jinja_env = jinja2.Environment(
 
 class MainPage(webapp2.RequestHandler):
 	def get(self):
-		print "hey"
 		form = jinja_env.get_template("form.html")
 		self.response.write(form.render())
 
@@ -22,5 +20,4 @@ class MainPage(webapp2.RequestHandler):
 		self.response.write(form.render(text=encoded_text))
 
 
-app = webapp2.WSGIApplication([
-	('/', MainPage)], debug=True)
+app = webapp2.WSGIApplication(('/', MainPage), debug=True)
