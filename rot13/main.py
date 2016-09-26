@@ -1,4 +1,3 @@
-
 import os
 import webapp2
 import jinja2
@@ -22,5 +21,4 @@ class MainPage(webapp2.RequestHandler):
 		self.response.write(form.render(text=encoded_text))
 
 
-app = webapp2.WSGIApplication([
-	('/', MainPage)], debug=True)
+app = webapp2.WSGIApplication(('/', MainPage), debug=True)
