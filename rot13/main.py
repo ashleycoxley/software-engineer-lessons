@@ -10,7 +10,6 @@ jinja_env = jinja2.Environment(
 
 class MainPage(webapp2.RequestHandler):
 	def get(self):
-		print "hey"
 		form = jinja_env.get_template("form.html")
 		self.response.write(form.render())
 
