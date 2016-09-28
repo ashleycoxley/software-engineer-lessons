@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blog</title>
+	<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+	<div class='container'>
+		<h1>Blog</h1>
+		<form id='add_new_button' action="/blog/newpost">
+    		<input type="submit" value="Add a new post"/>
+		</form>
+		<section id='blog_post_section'>
+			{% block content %}
+			{% endblock %}
+		</section>
+	</div>
+</body>
+</html>
