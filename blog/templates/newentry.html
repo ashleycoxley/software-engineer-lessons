@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blog | New Entry</title>
+	<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+	<div class='container'>
+		<h1>Blog</h1>
+		<form method='post' class='entry-box'>
+			<h2>Add a new entry</h2>
+			<div class='entry-row'>
+				<label>Subject
+					<input class='entry-input' name='subject'>
+				</label>
+			</div>
+			<div class='entry-row'>
+				<label>Content
+					<textarea class='entry-input' name='content' class='blog_text'></textarea>
+				</label>
+			</div>
+		<input type='submit'>
+		</form>
+		<p>{{error}}</p>
+	</div>
+</body>
+</html>

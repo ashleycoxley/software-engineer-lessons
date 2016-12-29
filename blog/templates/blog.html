@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+	{% for posting in recent_postings: %}
+	<div class='blog_post'>
+		<h2>{{posting.subject}}</h2>
+		<p>{{posting.content}}</p>
+	</div>
+	{% endfor %}
+
+{% endblock %}

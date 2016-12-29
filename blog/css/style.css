@@ -1,0 +1,36 @@
+.container {
+	padding-top: 15px;
+	max-width: 1000px;
+    margin-left: auto;
+	margin-right: auto;
+}
+
+#blog_post_section .entry-row {
+	box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.blog_post {
+	text-align: center;
+	width: 100%;
+}
+
+.entry-box {
+	text-align: center;
+}
+
+.entry-row {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 100%;
+}
+
+/*.entry-row>label {
+	width: 30%;
+}
+
+.entry-row>.entry-input {
+	width: 70%;
+}
+*/
